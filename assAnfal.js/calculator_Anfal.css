@@ -1,0 +1,76 @@
+/*  الخصائص من موسوعة حسوب 
+https://wiki.hsoub.com/
+*/
+/*color: https://www.htmlcodes.ws/color/html-color-code-generator.cfm?colorName=WhiteSmoke*/
+  
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* لتوزيع المسافة بين العناصر   https://wiki.hsoub.com/CSS/justify-content */
+  align-items: center;
+  background: linear-gradient(to right , #87CEEB, #2e7699, #B0C4DE);
+font-family: cursive;
+}
+
+.calculator {
+  background: whitesmoke;
+  width: 400px;
+  border-radius: 12px;
+}
+
+
+.calculator-display {
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 10px 10px 0 0;
+}
+
+#resultScreen{
+text-align:right;
+border: none;
+background: black;
+  color: white;
+  border-radius: 10px 10px 0 0;
+height:90px;
+margin: 0;
+  padding: 25px;
+  font-size: 45px;
+  font-family: cursive;
+  font-weight: 100;
+  overflow-x: auto;
+  
+  
+}
+
+.calculator-button {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*Make a 3 columns grid container : https://wiki.hsoub.com/CSS/grid-template-columns */
+  grid-gap: 10px;
+  padding: 10px;
+}
+ .equal-sign {
+  color: white;
+  grid-column: -2;
+  grid-row: 2 / span 5;
+}
+button {
+  min-height: 50px;
+  font-size: 20px;
+  font-weight: 100;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: rgb(175, 193, 214);
+  font-family: cursive;
+  color: black;
+}
+.operator {
+  background: rgb(125, 145, 168);
+  color: white;
+  font-size: 30px;
+}
+
